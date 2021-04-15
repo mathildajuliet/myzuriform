@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body {
+    background-image: url(https://img.freepik.com/free-vector/online-payment-isometric-illustration-financial-transactions-internet-payments_88138-475.jpg?size=626&ext=jpg);
+      font-family: Arial, Helvetica, sans-serif;
+ }
+ .wrapper {
+     margin: 25px auto 0;
+     width: 400px;
+     padding: 25px;
+     background-color: coral;
+     /*box-shadow: 0px 0px 20px rgba(0, 0,0, 0.55)*/
+ }
+  .wrapper h2 {
+      text-align: center;
+      padding: 10px;
+      margin-bottom:20px;
+      background-color: aliceblue;
+      color: indigo;
+      border: 1px dotted #333;
+
+  }
+  h4 {
+      padding-bottom: 5px;
+      color: indigo;
+
+  }
+  .wrapper H4{
+      font-size:large;
+      padding-top: 5px;
+      color: indigo;
+      /*border: 0.5px dotted #333;*/
+  
+  }
+  .input-group{
+      color: indigo;
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      padding: 5px 0px;
+  }
+  .input-box{
+      width: 100%;
+      position: relative;
+      margin-right: 14px;
+    
+      
+  }
+  .input-box:last-child{
+      margin-right: 0;
+  }
+   .name {  
+    
+      width: 100%;
+      letter-spacing: 1px;
+      transition: 0.3s;
+      border-radius: 2px;
+      color: #333;
+      padding: 14px 10px 14px 50px;
+      background-color: #fcfcfc;
+      border: 1px solid #00000033;
+      outline: none;
+  }
+
+.input-box .icon{
+    width: 48px;
+    position: absolute;
+    border-radius: 48Px;
+    font-size: 18px;
+    pointer-events: none;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+     top: 0px;
+    left: 0px; 
+    bottom: 0px; 
+
+}
+
+.input-box .fa-envelope{
+    width: 48px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    border-radius: 48Px;
+    top: 0px;
+    left: 0px; 
+    bottom: 0px; 
+  }
+  .name:focus + .icon{
+      background-color: indigo;
+      color: #fff;
+      border-right: 1px solid indigo;
+      border: none;
+
+  }
+  .dob { 
+      width: 30%;
+      padding: 14px;
+      text-align: center;
+      background-color: #fcfCfC;
+      transition: 0.3s;
+      outline: none;
+      border: 1px solid #fcf6f6;
+       border-radius: 2px solid #c0bfbf; 
+
+  }
+  .radio {
+      display: none;
+      
+  }
+  .input-box label{
+      width: 50%;
+      padding: 10px;
+      background-color: #fcfcfc;
+      display: inline;
+      text-align: center;
+      float: left;
+      border: 1px solid #c0bfbf;
+   } 
+.input-box :first-of-type{
+    border-top-right-radius: 2.5px;
+    border-bottom-left-radius: 2.0px;
+    
+}
+.input-box :last-of-type{
+    border-bottom-left-radius:2.5px;
+    border-top-left-radius: 2.5px;
+}
+.radio:checked + label{
+    background-color: indigo;
+    color: paleturquoise;
+    transition: 0.3s;
+}
+.input-box select{
+    padding: 12px;
+    width: 45%;
+    display: inline-block;
+    font-size: 15px;
+    background-color: indigo;
+    height: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #c0bfbf
+
+}
+.input-box select:focus{
+    background-color: indigo;
+    color: paleturquoise;
+}
+.input-box button{
+    text-align: center;
+    background-color: rebeccapurple;
+    width: 100%;
+    height: auto;
+    color:paleturquoise;
+    font-family: inherit;
+    /* padding: 0.5rem 0; */
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+   @media screen and (max-width:600px) {
+    .input-box{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     width: 100%;
+    }
+   
+   }
+   
+   
+   
+   
